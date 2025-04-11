@@ -1,0 +1,27 @@
+<section id="contact" class="dark-bg text-white py-20 code-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 section-content">
+      <h2 class="text-4xl font-extrabold text-center text-yellow-300 mb-12">Get In Touch</h2>
+      <div class="max-w-lg mx-auto bg-gray-800 rounded-2xl shadow-xl p-8 card-hover">
+        <form action="https://formsubmit.co/karroumsalmane@gmail.com" method="POST" class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
+            <input type="text" id="name" name="name" class="w-full mt-1 p-3 rounded-lg bg-gray-700 border-gray-600 text-white focus:ring-yellow-400 focus:border-yellow-400" required>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
+            <input type="email" id="email" name="email" class="w-full mt-1 p-3 rounded-lg bg-gray-700 border-gray-600 text-white focus:ring-yellow-400 focus:border-yellow-400" required>
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
+            <textarea id="message" name="message" rows="4" class="w-full mt-1 p-3 rounded-lg bg-gray-700 border-gray-600 text-white focus:ring-yellow-400 focus:border-yellow-400" required></textarea>
+          </div>
+          <div>
+            <button type="submit" class="w-full bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-lg hover:bg-yellow-500 hover:scale-105 transition transform duration-300">Send Message</button>
+          </div>
+          <input type="hidden" name="_subject" value="New Contact Form Submission">
+          <input type="hidden" name="_next" value="http://localhost:4200/thanks">
+          <input type="hidden" name="_captcha" value="false">
+        </form>
+      </div>
+    </div>
+  </section>

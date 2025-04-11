@@ -1,0 +1,8 @@
+/* src/app/contact/contact.component.css */
+.dark-bg {
+    background: linear-gradient(135deg, #1f2937, #4b5563);
+    background-size: 200% 200%;
+    animation: gradientShift 20s ease infinite;
+    padding-top: 5rem; /* py-20 */
+    padding-bottom: 5rem;
+}
