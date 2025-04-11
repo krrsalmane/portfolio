@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* src/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Gradient animation */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Smooth transitions for cards */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Coding background */
+.code-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="0" y="15" font-family="monospace" font-size="12" fill="rgba(250, 204, 21, 0.2)">function code() { return "Salmane Karroum"; }</text><text x="100" y="45" font-family="monospace" font-size="12" fill="rgba(250, 204, 21, 0.2)">const skills = ["React", "TypeScript", "Node.js"];</text><text x="50" y="75" font-family="monospace" font-size="12" fill="rgba(250, 204, 21, 0.2)">export default Portfolio;</text><text x="150" y="105" font-family="monospace" font-size="12" fill="rgba(250, 204, 21, 0.2)">// Build awesome apps</text></svg>');
+    background-size: 300px 150px;
+    animation: codeFlow 20s linear infinite;
+    opacity: 0.3;
+}
+
+.dark-bg .code-bg::before {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="0" y="15" font-family="monospace" font-size="12" fill="rgba(255, 255, 255, 0.2)">function code() { return "Salmane Karroum"; }</text><text x="100" y="45" font-family="monospace" font-size="12" fill="rgba(255, 255, 255, 0.2)">const skills = ["React", "TypeScript", "Node.js"];</text><text x="50" y="75" font-family="monospace" font-size="12" fill="rgba(255, 255, 255, 0.2)">export default Portfolio;</text><text x="150" y="105" font-family="monospace" font-size="12" fill="rgba(255, 255, 255, 0.2)">// Build awesome apps</text></svg>');
+    opacity: 0.2;
+}
+
+@keyframes codeFlow {
+    0% { background-position: 0 0; }
+    100% { background-position: 300px 150px; }
+}
+
+/* Ensure content stays above background */
+.section-content {
+    position: relative;
+    z-index: 1;
+}
