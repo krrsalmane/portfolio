@@ -1,0 +1,10 @@
+/* src/app/navbar/navbar.component.css */
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
