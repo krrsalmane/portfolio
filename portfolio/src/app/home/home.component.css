@@ -1,5 +1,5 @@
 .hero-bg {
-    background: linear-gradient(135deg, #4f46e5, #7c3aed, #db2777);
+    background: linear-gradient(135deg, #6d66ef, #b997f4, #f174ad);
     background-size: 200% 200%;
     animation: gradientShift 15s ease infinite;
     padding-top: 6rem; /* py-24 */

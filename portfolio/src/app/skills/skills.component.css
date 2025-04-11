@@ -1,6 +1,6 @@
 /* src/app/skills/skills.component.css */
 .dark-bg {
-    background: linear-gradient(135deg, #1f2937, #4b5563);
+    background: linear-gradient(135deg, #f174ad, #6d66ef);
     background-size: 200% 200%;
     animation: gradientShift 20s ease infinite;
     padding-top: 5rem; /* py-20 */
